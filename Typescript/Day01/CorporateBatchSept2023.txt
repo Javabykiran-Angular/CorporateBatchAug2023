@@ -1,0 +1,29 @@
+
+Our Session is at 11am 
+- Duration 2 hr it  may be change 1.30min or 2.30min depends on topic 
+- All S/w notes and code will be given on git hub repo except images
+- All task should be perform within that day 
+- U have to know OOPS Concept
+- U also Know the basics of HTML & CSS 
+- Here we first Learn Typescript 
+
+ 
+
+Last Lecture
+
+
+Today's Lecture
+1 What is Typescript 
+	- type means it use for a variable/method to assign a data type
+	- script => U perform any logical operation
+	- typescript is superset of JS 
+
+	typescript= Ecma Script standard+Ecma script Version+Additional Features(Support OOPS Concept,module)
+	
+	
+2 compilation & run 
+3 variable
+4 data type 
+
+	
+	
