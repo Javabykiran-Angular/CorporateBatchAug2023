@@ -1,0 +1,37 @@
+Last Lecture
+1 What is Typescript 
+	- type means it use for a variable/method to assign a data type
+	- script => U perform any logical operation
+	- typescript is superset of JS 
+	typescript= Ecma Script standard+Ecma script Version+Additional Features(Support OOPS Concept,module)
+	
+2 compilation & run 
+	demo1.ts
+	
+	console.log("Hello World");
+	console.log('Hello World');
+	console.log(`Hello World`);
+	var a1,a2;
+	
+	//data types 
+	// number,string,boolean,any 
+	// void
+	// null & undefined 
+	
+	tsc demo1.ts & node demo1.js
+	
+	
+3 variable
+4 data type
+
+Today's Lecture
+1 Type Assertion
+2 Operators,Control statement
+3 Loop statements
+4 var Vs let Vs Const
+5 Functions
+6 Anonymous Function 
+7 Fat arrow function
+
+	
+	
