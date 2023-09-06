@@ -1,0 +1,63 @@
+Last Lecture
+1 Type Assertion
+	1 Angle bracket 
+	2 as syntax
+	
+	var a:any;
+	var temp=(<string> a);
+	var temp=(a as string);
+	
+	
+2 Operators,Control statement
+	
+3 Loop statements
+while,do-whil1,for ,foreach 
+
+for(var i=0;i<4;i++){
+	
+}
+
+for(let i=0;i<4;i++){
+	...
+}
+
+const a=3.14;
+
+4 var Vs let Vs Const
+5 Functions
+	
+	function aad1(a:number,b:number){
+	...
+		return (a+b)
+	}
+	
+	let res=add1(10,20);
+	
+6 Anonymous Function 
+	let temp1=function (a:number,b:number):number{
+	return (a+b);
+	}
+	let res=temp1(10,20);
+7 Fat arrow function
+	let temp2=(a:number,b:number):number=>{
+		return (a+b);
+	}
+
+temp2();
+
+
+Today's Lecture
+1 optional parameter function
+2 default parameter function
+3 array basics
+4 foreach,join
+5 Rest Parameter function & Spread Operator
+6 push & pop
+7 splice method
+8 map
+9 slice
+
+Task Create string array Dynamically & Traverse the array
+
+	
+	
