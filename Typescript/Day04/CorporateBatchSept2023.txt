@@ -1,0 +1,54 @@
+Last Lecture
+1 optional parameter function
+	function add1(a?:number,b?:number){
+	
+	}
+2 default parameter function
+	function add1(a:number,b:number=10){
+	
+	}
+3 array basics
+	let a:number[]=[];
+	let a:number[]=[45,63,12];
+	let a=[45,63,12,"sumit"];
+	let a:any[]=[];
+	
+4 foreach,join
+	a.forEach((value,i,arr)=>{
+		...
+	})
+	
+	console.log(a.join(" "))
+5 Rest Parameter function & Spread Operator
+	function display(string str,...item:number[]){
+		...
+	}
+	display(10,50,48)
+6 push & pop
+	a.push(45,78);
+	a.pop();
+7 splice method
+	a.splice(2,0,78,90)
+	a.splice(3,1,80,90)
+8 map
+	let temp=a.map((value)=>{
+		return value*value;
+	})
+9 slice
+	let temp=a.slice(1,8);
+
+Today's Lecture
+1 json Object
+2 Array of Object
+3 Additional features of typescript
+4 Oops concept
+5 class,object,property,method
+6 constructor
+7 Access Specifier
+8 Access in same package & different package
+
+Task Display class data using advanced Features of Typescript
+
+
+	
+	
