@@ -1,0 +1,100 @@
+Last Lecture
+1 json Object
+	let obj={
+		id:9,
+		fname:'sumit'
+	}
+	console.log(obj.id)
+	console.log(obj["id"])
+2 Array of Object
+	
+	let arrpbj=[
+		{
+			id:9,
+			fname:'..',
+			country:{
+				cid:..,
+				cname:".."
+			},
+			month:[".."],
+			result:[
+				{
+					subj:"m1",
+					marks:45
+				}
+			]
+		}
+	]
+	
+	for(let i=0;i<arrpbj.length;i++){
+		console.log(
+			arrpbj[i].id 
+			arrpbj[i].country.cname
+			arrpbj[i].month.join(" ")
+		)
+		
+		arrpbj[i].result.forEach((value)=>{
+			console.log(value.subj
+				value.marks 
+			)
+		})
+	}
+	
+3 Additional features of typescript
+4 Oops concept
+5 class,object,property,method
+ export	class Myclass{
+		 public id:number;
+		 private 
+		 protected
+		...
+		
+		constructor(id:number,f:string,...){
+			this.id=id;
+			this.fname=f;
+		}
+		
+		display(){
+			console.log(this.id)
+		}
+		
+	}
+	
+	let obj=new Myclass(9,'',...);
+	obj.display()
+	
+	function add(a:number,b:number):number{
+		return (a+b);
+	}
+	
+	demo2.ts
+	import {Myclass,add} from './demo1'
+	...
+	
+	myfolder
+	demo3.ts
+	import {Myclass} from '../day04/demo1';
+	...
+	
+6 constructor
+7 Access Specifier
+8 Access in same package & different package
+
+Today's Lecture
+1 inheritance
+2 Method Override
+3 Interface
+4 composition/Aggregation/has a relation
+5 Angular Installation setup
+6 Angular File Structure
+
+Task 
+ Implement Single level Inheritance in Typescript
+ Implement Multi level Inheritance in Typescript
+ Access Function in Different Package
+ Install Angular 
+ Create Angular Project 
+
+
+	
+	
