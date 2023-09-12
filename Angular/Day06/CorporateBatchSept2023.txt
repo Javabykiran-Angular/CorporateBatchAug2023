@@ -1,0 +1,37 @@
+Last Lecture
+1 inheritance
+2 Method Override
+3 Interface
+4 composition/Aggregation/has a relation
+5 Angular Installation setup
+6 Angular File Structure
+
+Today's Lecture
+1 Angular Application Flow
+2 Component
+3 manual component creation
+4 cli through component creation
+5 data binding
+	- Data flow from Component to View file 
+	1 string interpolation
+	2 Property binding
+	3 Style binding
+	4 Class binding
+	
+6 string interpolation
+	- {{propertyName}}
+7 property binding
+
+8 style binding
+	
+
+
+Task 
+ 
+1 Create employee componet manually
+2  Create Student Component through CLI
+3  Apply PropertyBinding to input tag of value attribute
+
+
+	
+	

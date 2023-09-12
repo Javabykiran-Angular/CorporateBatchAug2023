@@ -1,0 +1,19 @@
+<p>property-binding works!</p>
+<!-- syntx
+        [html attribute/directive/custom attribute]="propertyName"
+-->
+
+<input type="text" [value]="name"><br><br>
+
+<img id="imgtag" [src]="imgUrl" alt="">
+<hr>
+
+<h2> Difference Between String interpolation And property binding </h2>
+
+<div hidden="{{isHidden}}">
+    Display the text using String interpolation 
+</div> <br><br>
+
+<div [hidden]="isHidden">
+    Display the text using Property Binding 
+</div>
