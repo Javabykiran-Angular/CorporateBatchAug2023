@@ -1,0 +1,87 @@
+Last Lecture
+1 Angular Application Flow
+2 Component
+3 manual component creation
+	@Component({
+		selector:'app-emp',
+		templateUrl:'..',
+		StyleUrls:['./']
+	})
+	export class EmployeeComponet{
+	
+	}
+	
+	app.component.html
+	<app-emp>
+4 cli through component creation
+	ng g c student
+	emp.html
+	<app-student>
+5 data binding
+	- Data flow from Component to View file 
+	1 string interpolation
+	2 Property binding
+	3 Style binding
+	4 Class binding
+	
+6 string interpolation
+	- {{propertyName}}
+	<h2> {{name}}</h2>
+	<img src=" {{imgUrl}} ">
+	<h2> {{num1+num2}}<h2>
+	
+	.ts 
+	name:string='...';
+	imgUrl:string=''
+	num1:number=4;
+	
+7 property binding
+	<input [value]="name">
+	< img [src]="imgUrl">
+	
+	<div hidden=" {{isHidden}} ">
+	
+	<div [hidden]="isHidden">
+	
+	.ts 
+	name:string='...';
+	isHidden:boolean=false;
+	
+	
+8 style binding
+	<h2 [style.color]="mycolor" > ...
+	<h2 [style.color]="rating<4?'red':'green'"
+	
+	<div [ngStyle]="jsonObj">
+	
+	
+	
+	.ts file 
+	mycolor:string='blue';
+	rating:number=2;
+	jsonObj={
+		color:'blue',
+		fontSize:'32px',
+		'font-family':...
+	}
+
+Today's Lecture
+
+1 Class Binding
+2 Event Binding
+3 click event
+4 $event
+5 template ref. variable
+	
+
+
+Task 
+ 
+1 Apply Class Binding to button, when button on click to change text style to italic & text color should be change.
+2 Implement Click Event & send Data to component file
+3 Write a program for Prime Number, to take dynamic data from end user & find out whether number is  prime or not prime number & display the result on View file.
+
+
+
+	
+	

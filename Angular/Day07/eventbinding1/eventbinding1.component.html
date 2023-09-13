@@ -1,0 +1,32 @@
+<p>eventbinding1 works!</p>
+<!-- syntax
+    (eventName)="eventHandler"
+-->
+
+<button (click)="onClick()" >Click</button>
+<br><br>
+<img title="on Click Image" src="../../assets/bg2.jpg" (click)="onImg()" alt="">
+<hr>
+
+<!-- $event
+    - It is special variable 
+    - It gives current dom element extra information about the element
+    - u can only access the data     
+-->
+
+<button value="Doller event occur.." (click)="onSend($event)" >Send</button>
+<br><br>
+<!-- 
+    template ref. variable
+    - It gives dom element information => it hold the object of html element 
+    - u can manipulate or change the bheavoiur of DOM element 
+    - to apply templte ref variable for that use # symbol 
+-->
+
+<input #inputname type="text" placeholder="Enter the Name"> <br><br>
+<button (click)="onSend1(inputname)" >Send</button> <br><br>
+
+<input #inputname1 type="text" placeholder="Enter the Name"> <br><br>
+<button (click)="onSend2(inputname1.value)" >Send</button>
+
+
