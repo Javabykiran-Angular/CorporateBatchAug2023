@@ -1,0 +1,79 @@
+Last Lecture
+1 Class Binding
+	<h2 [class]="myclass" > ...
+	<h2 [class.suucess]="rating<4" 
+		[class.danger]="rating>4"	> ..
+	<div [ngCLass]="json">
+	
+	.ts file 
+	
+	isSpecial:boolean=true;
+	
+	json={
+		'success':!this.iserror,
+		'danger':this.iserror,
+		'special': this.isSpecial
+	}
+	
+2 Event Binding
+	- mdata flow from view file to component file 
+3 click event
+	<button (click)="onClick()">
+	<img (click)="onImage()">
+	
+	.ts file
+	count:boolean=true;
+	onClick(){
+	....
+	
+	}
+4 $event
+
+	<button value="..." (click)="onClick($event)">
+	
+	.ts 
+	onClick(myevent:any){
+	console.log(myevent)
+		myevent.target.value 
+	}
+
+5 template ref. variable
+	<input #inputname>
+	<button (click)="onInput(inputname.value)">
+	
+	.ts file 
+	onImage(myname:any){
+		...
+		myname.value
+		myname.style.background='';
+		
+	}
+	
+
+
+Today's Lecture
+
+1 Real time example
+2 change event
+3 k/b event 
+	1 keyup
+	2 keydown
+4 access data without event Handler
+5 structural directive
+	1 *ngIf => 
+	2 *ngFor
+	3 *ngSwitch
+6 if directive
+7 for directive
+8 mouse event
+	
+
+
+Task 
+1 Design Login Form & validate it.
+ 
+
+
+
+	
+	
