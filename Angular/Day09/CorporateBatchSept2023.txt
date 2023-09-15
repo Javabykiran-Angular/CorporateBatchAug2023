@@ -1,0 +1,70 @@
+Last Lecture
+1 Real time example
+	<input #inputnum1>
+	<input #inputnum2>
+	<button (click)="onAddition(inputnum1.value,inputnum2.value)">
+	<input [value]="result">
+	
+	.ts 
+	onAddition(num1:any,num2:any){
+		let n1=+num1;
+		let n2=+num2;
+		this.result=n1+n2;
+	}
+	
+2 change event
+	<input (change)="onChange()">
+	
+	.ts 
+	
+	onChange(){
+		...
+	}
+	
+3 k/b event 
+	1 keyup
+		<input (keyup)="onKeyup()">
+		
+	2 keydown
+	
+4 access data without event Handler
+5 structural directive
+	1 *ngIf => 
+	2 *ngFor
+	3 *ngSwitch
+6 if directive
+	<div *ngIf="rating<4;else elsepart">
+...
+
+<ng-template #elsepart>
+	....
+</ng-template>	
+
+
+Today's Lecture
+1 Two Way data Binding
+	- [(ngModel)]="Property"
+2 for directive	
+3 mouse event
+	1 mouseover
+	2 mouseout 
+4 Switch Directive
+5 Component Interaction
+	
+	input decorator 
+		=> to send a data from parent to child 
+	Output decorator
+		=> to send data from child to parent 
+	
+
+
+Task 
+1 Change the width of input box when user enter the number in input box
+2 Set image to div and on mouse hover change the transparency/opacity of the image Hint use opacity css property & also use mouseout event & mouseover.
+3 Create web page containing Employee having fields id, name, salary & two buttons name viz add & remove button. When we click add button dynamic value is added And display that data on web page.When we click on Remove Button the particular data iwill remove.
+ 
+
+
+
+	
+	

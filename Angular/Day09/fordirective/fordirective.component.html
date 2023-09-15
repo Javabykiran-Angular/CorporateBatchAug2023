@@ -1,0 +1,56 @@
+<p>fordirective works!</p>
+
+<!-- syntax
+    *ngFor="let item of arrayname"
+-->
+<!-- <ul>
+    <li *ngFor="let course of courses"> {{course}} </li>
+</ul>
+<hr>
+<ul>
+    <li *ngFor="let course of courses;index as i"> {{i+1}}  {{course}} </li>
+</ul> -->
+<hr>
+<table border="1px">
+    <thead>
+        <th>Sr No</th>
+        <th>Product name</th>
+        <th>Product Price</th>
+        <th>Product Qty</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of arrProd;index as i">
+            <td> {{i+1}} </td>
+            <td> {{item.name}} </td>
+            <td> {{item.price}} </td>
+            <td> {{item.qty}} </td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<table border="1px">
+    <thead>
+        <th>Sr No</th>
+        <th>Product name</th>
+        <th>Product Price</th>
+        <th>Product Qty</th>
+    </thead>
+    <tbody>
+        <tr (mouseover)="onMouseover(item)" *ngFor="let item of arrProd;index as i"
+        [ngClass]="{
+            'highlight':item.name===selected
+        }"
+        (mouseout)="onMouseOut()"
+        >
+            <td> {{i+1}} </td>
+            <td> {{item.name}} </td>
+            <td [ngClass]="{
+                'priceHighlight':item.name===selected
+            }" > {{item.price}} </td>
+            <td> {{item.qty}} </td>
+        </tr>
+    </tbody>
+</table>
+
+
+

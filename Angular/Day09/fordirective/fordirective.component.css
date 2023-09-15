@@ -1,0 +1,13 @@
+ul{
+    list-style: none;
+}
+
+.highlight{
+    background: green;
+    color: white;
+}
+
+.priceHighlight{
+    background: red;
+    color: white;
+}
