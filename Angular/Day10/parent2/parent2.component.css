@@ -1,0 +1,22 @@
+.divclass{
+   background: linear-gradient(45deg,red,green,cyan,orange);
+   width: 400px;
+   border: 1px solid;
+   border-radius: 10px;
+   padding: 10px;
+}
+
+.mainDiv{
+   display: flex;
+}
+
+.mainDiv button{
+   margin: 10px;
+   padding: 5px;
+   line-height: 2em;
+}
+.childdiv{
+   margin: 60px;
+   border: 2px dotted blue;
+   padding: 10px;
+}

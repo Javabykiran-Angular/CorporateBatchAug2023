@@ -1,0 +1,95 @@
+Last Lecture
+1 Two Way data Binding
+	- [(ngModel)]="Property"
+	<input [(ngModel)]="name">
+	
+2 for directive	
+	<ul>
+		<li *ngFor="let item of course;index as i ">
+			 {{i+1}} {{item}}</li>
+	</ul>
+	
+	<table>
+		...
+		<tbody>
+			<tr (mouseover)="onMouseover(item)" *ngFor="let item of arrproduct"
+			(mouseout)="onMouseout()"
+			[ngClass]="{
+				'highlight':item.name===selected
+			}"
+			>
+				<td> {{item.name}}
+				...
+				
+	.ts 
+	onMouseover(item:any){
+		this.selected=item.name;
+	}
+	
+	onMouseout(){
+		this.selected=''
+	}
+3 mouse event
+	1 mouseover
+	2 mouseout 
+4 Switch Directive
+	
+	<input #inputcolor>
+		<button (click)="onClick(inputcolor.value)">
+		
+		<div [ngSwitch]="choice">
+			<div *ngSwitchCase="'red'" [style.background]="choice">
+			...
+			
+			<div *ngSwitchDefault
+				[style.background]="choice==''?'black':'orange'"
+			>...
+		
+		.ts 
+		
+		onClick(colorname:string){
+			this.choice=colorname.toLowerCase().trim();
+		}
+	
+5 Component Interaction
+	
+	input decorator 
+		=> to send a data from parent to child 
+	Output decorator
+		=> to send data from child to parent 
+		
+parent.ts 
+		strData:string=''
+		json={
+		
+		}
+	
+	parent.html
+	<app-child1 [ParentStrData]="strData" [ParentJsonData]="json" >
+	
+	child1.ts
+	@Input() ParentStrData:string='';
+	@Input() ParentJsonData:any={};
+	
+Task 
+1 Change the width of input box when user enter the number in input box
+2 Set image to div and on mouse hover change the transparency/opacity of the image Hint use opacity css property & also use mouseout event & mouseover.
+
+3 Create web page containing Employee having fields id, name, salary & two buttons name viz add & remove button. When we click add button dynamic value is added And display that data on web page.When we click on Remove Button the particular data i will remove.
+
+Today's Lecture
+1 output Decorator
+   - to send a data from child to parent 
+2 ViewChild
+	1 if u want access parent html element directly without event binding 
+	2 if u want access child property or child method in your parent component
+3 Inbuild Pipe
+
+Task 
+1 Write a Program to send rating (as number) from parent component to child component. In child component check whether rating is less than 6 then apply background color
+ 
+
+
+
+	
+	
