@@ -1,0 +1,103 @@
+Last Lecture
+1 Inbuild Pipe
+	- It transform ur data without chnaging its original value
+	syntax => {{propertName | pipename}} 
+			 <input [value]="name | pipename"
+	lowercase,uppercase,titlecase,slice
+	percentage,currency,number,date 
+2 Custom Pipe 
+	- PipeTransform => iterface 
+		- transform(value:any,start:number=0,end:number=15){
+			let temp=(<string> value);
+			
+			return (temp.substring(start,end))
+		}		
+	
+3 Services
+	- It is simple class 
+	- it is used for code resulability 
+	- it is used for code maintability
+	- it is used to connect ur backend server to ur frontend server 
+	- it is provide isolation to ur component from http end point url 
+	- it is used to written ur BL 
+	
+	
+4 Http Services
+	1 get => get the data from backend server 
+	2 post => to send data from frontend server to backend send
+	3 put  => to update particular record
+	4 delete => to delete a particular record 
+	
+	Http Request / Http Response
+	it has 2 parts 
+	1 Header 
+		- content Type 
+			- image
+			- json 
+			- text
+			- pdf
+			- exceltsheet
+		- Ip
+		- date 
+		- method
+		- Auth token 
+		- version 
+	2 Body 
+		data 
+		   - json/text-html/xml 
+		   
+	Http Response
+	1 Header 
+		- content Type 
+			- image
+			- json 
+			- text
+			- pdf
+			- exceltsheet
+		- Ip
+		- date 
+		- method
+		- Auth token 
+		- version 
+		- status 
+			1 2xx => 200-299 => success,ok
+			2 3xx => 300-399 => Redirection
+			3 4xx => 400-499 => client 
+			4 5xx => 500-599 => server side 
+	2 Body 
+		data 
+		   - json/text-html/xml 
+	
+5 http://jsonplaceholder.typicode.com/posts
+	- it is a fake service => bcz it not store /update/delete your recoed in database but it gives a response of ur request
+
+	ng g s servicename 
+	
+	U have import HttpClientModule => app.module.ts =>import 
+		
+	
+6 @Injectable
+
+Today's Lecture
+1 get
+2 post 
+3 put 
+4 delete 
+5 errors handles
+6 routing 
+	- to navigate form one component to another comonent
+	Basic Steps
+	1 Configure the Route 
+	2 use <router-outlet>
+	3 to established the link between component=> routerLink/navigate()
+	
+
+Task Integrate all Curd Operation 
+
+
+ 
+
+
+
+	
+	
