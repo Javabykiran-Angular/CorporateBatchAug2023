@@ -1,0 +1,51 @@
+Last Lecture
+1 get
+2 post 
+3 put 
+4 delete 
+5 errors handles
+6 routing 
+	- to navigate form one component to another comonent
+	Basic Steps
+	1 Configure the Route 
+	2 use <router-outlet>
+	3 to established the link between component=> routerLink/navigate()
+	
+
+Task Integrate all Curd Operation 
+
+Today's Lecture
+1 Send query Parameter
+2 Dynamic routing 
+3 Lazy Loading
+	- Create your own module 
+5 Integration Of Bootstrap
+	- inbuild classes for css 
+	- make ur UI attractive
+	- make ur application responsive
+	1 use bootsrap online
+		It provides CDN Link 
+	2 use bootsrap offline
+		
+6 Template driven Form
+	1 FormControl class 
+		1 valid => ture
+		2 invalid => true 
+		3 touched => true 
+		4 pristine => true
+		5 dirty => true 
+		6 errors 
+		
+	steps 
+	1 to create a instance of FormControl class => for that u hv use ngModel without its notation => it hold the formcotrol class instance  & u have use name attribute 
+	2 create template ref variable to assign ngModel 
+	3 use errors object for validation then u have to use required attribute 
+
+
+
+ 
+
+
+
+	
+	
